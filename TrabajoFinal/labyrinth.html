@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/table-styles.css">
+    <title>Tabla Generada</title>
+</head>
+<body>
+    <div class="back-arrow"><p><a href="index.html">←</a></p></div>
+    <div class="table-container">
+        <table id="generatedTable"></table>
+    </div>
+    <div class="form-section">
+        <form id="coordinatesForm">
+            <label for="startRow">Fila de inicio:</label>
+            <input type="number" id="startRow" min="1" required>
+            <label for="startColumn">Columna de inicio:</label>
+            <input type="number" id="startColumn" min="1" required>
+            <label for="endRow">Fila de fin:</label>
+            <input type="number" id="endRow" min="1" required>
+            <label for="endColumn">Columna de fin:</label>
+            <input type="number" id="endColumn" min="1" required>
+            <label for="delay">Delay:</label>
+            <input type="checkbox" id="delay">
+            <button type="submit">Actualizar Coordenadas</button>
+        </form>
+        <button id="btnBFS">BFS</button>
+        <button id="btnDFS">DFS</button>
+        <button id="btnRecursivity">Recursividad</button>
+        <button id="btnCache">Caché</button>
+        <button id="btnReset">Reset</button>
+    </div>
+    <script src="Scripts/find-the-way-script.js" type="module"></script>
+</body>
+</html>
